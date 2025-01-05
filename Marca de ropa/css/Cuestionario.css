@@ -1,0 +1,576 @@
+/* Custom Header Styles */
+.custom-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .nav {
+    background-color: white;
+  }
+ 
+/* Estilo para el logo a la izquierda */
+.left-content .logo {
+  width: 30px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+/* Estilo para el enlace de Twitter */
+.twitter-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white; /* Mantiene el color blanco */
+  font-size: 18px; /* Tamaño consistente con el texto original */
+}
+
+.twitter-link:hover {
+  text-decoration: underline; /* Añade subrayado al pasar el ratón */
+  color: #1DA1F2; /* Color de marca de Twitter en hover */
+}
+
+/* Estilo para la imagen a la derecha */
+.right-content .right-image {
+  width: 30px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+.left-content p {
+  margin-top: 10px;
+}
+
+.right-content p {
+  margin-top: 10px;
+}
+
+/* Estilo para el logo a la derecha junto al texto */
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo a la derecha */
+.logo-right {
+  width: 30px; /* Ajusta el tamaño del logo a la derecha */
+  height: auto;
+  margin-left: 10px; /* Espacio entre el texto y el logo */
+}
+
+/* Estilo para el título centrado */
+.custom-header h3 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+/* Estilo para los textos */
+.left-content p, .right-content p {
+  font-size: 18px;
+  color: white;
+}
+/* Estilo para el título centrado */
+.custom-header h3 {
+  font-size: 24px;
+  color: white;
+}
+/* Estilo general de la barra de navegación */
+.navbar {
+  background-color: white;
+  padding: 10px 0;
+}
+
+/* Estilo para los enlaces */
+.navbar .nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Logo central */
+.navbar-logo .logo-center {
+  width: 60px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+/* Estilo para las imágenes a la derecha */
+.navbar .nav-icon {
+  width: 30px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+/* Estilo para el contenido dentro del menú desplegable */
+.custom-dropdown {
+  display: none; /* Por defecto, oculto */
+  position: fixed;
+  top: 120px; /* Empieza debajo de la barra de navegación */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 120px - 50px); /* No cubre el pie de página */
+  background-color: #f8f9fa;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo para mostrar el catálogo cuando se active */
+#shopToggle:checked ~ .custom-dropdown {
+  display: block;
+  transform: translateX(0);
+}
+
+/* Centrar las columnas dentro del dropdown */
+.custom-dropdown .d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Asegura que las columnas se alineen arriba */
+  width: 100%;
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilo para las columnas */
+.text-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Ocupa el 80% del espacio disponible, lo que deja un pequeño margen a la derecha */
+}
+
+/* Estilo para la imagen a la derecha */
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo para la línea gris */
+.line-gray {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc; /* Color gris para la línea */
+  margin-top: 20px;
+}
+
+/* Estilo para el texto debajo de la línea */
+.line-container p {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+/* Estilo de los enlaces */
+.line-container a {
+  text-decoration: none;
+  color: rgb(48, 47, 47); /* Color blanco por defecto */
+}
+
+.line-container a:hover {
+  color: black; /* Cambia a negro al pasar el ratón */
+}
+
+/* Línea gris debajo de las columnas */
+.line-gray {
+  border-bottom: 2px solid gray; /* Línea gris */
+  width: 100%; /* Asegura que la línea cubra todo el ancho */
+}
+
+/* Texto debajo de la línea gris */
+.bottom-text {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px; /* Espacio entre la línea y el texto */
+  text-align: center;
+}
+/* Estilo de los enlaces en las columnas */
+.text-columns a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(56, 55, 55); /* Texto blanco por defecto */
+}
+
+.text-columns a:hover {
+  color: black; /* Cambia a negro al pasar el ratón */
+}
+
+/* Estilo para el enlace "Lo más comprado" */
+p a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(56, 55, 55); /* Texto blanco por defecto */
+}
+
+p a:hover {
+  color: black; /* Cambia a negro al pasar el ratón */
+}
+
+/* Estilo para el enlace EUR€|ESPAÑA */
+#languageDropdown {
+  cursor: pointer; /* Indica que es interactivo */
+  color: black; /* Cambia el color del texto a negro */
+}
+
+/* Estilo para la flecha de despliegue */
+#languageDropdownArrow {
+  font-size: 10px; /* Tamaño de la flecha más pequeña */
+  transition: transform 0.3s ease; /* Animación para la rotación */
+}
+
+/* Estilo para el contenedor del menú de idiomas */
+.language-dropdown-menu {
+  position: absolute;
+  top: 100%; /* Posiciona el menú justo debajo de "EUR€|ESPAÑA" */
+  
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+  width: 150px; /* Ajusta el tamaño del menú */
+  display: none; /* Menú oculto por defecto */
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* Estilo para los elementos dentro del menú */
+.language-dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Efecto hover sobre los items del menú */
+.language-dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#languageToggle:checked + .language-dropdown-menu {
+  display: block; /* Muestra el menú */
+}
+
+/* Rotar la flecha hacia arriba cuando el menú está visible */
+#languageToggle:checked + .language-dropdown-menu + #languageDropdownArrow {
+  transform: rotate(180deg); /* Rota la flecha hacia arriba */
+}
+
+
+
+/* Estilo para el contenedor de búsqueda */
+.search-container {
+  display: none; /* Oculto por defecto */
+  position: absolute; /* Cambiado a 'absolute' para no interferir con el flujo normal de la página */
+  top: 100%; /* Lo coloca justo debajo del nav */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  border-top: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Estilo para el campo de entrada de búsqueda */
+.search-input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo para el botón de búsqueda */
+.search-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: gray;
+}
+
+/* Mostrar el contenedor de búsqueda cuando el checkbox esté marcado */
+#searchToggle:checked ~ #searchContainer {
+  display: block;
+}
+
+
+
+
+
+
+
+/* Estilo para el contenedor del menú de tienda */
+.shop-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Empieza fuera de la pantalla a la derecha */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con algo de transparencia */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineamos el contenido al inicio, hacia la parte superior */
+  transition: right 1s ease-in-out; /* Animación suave al aparecer desde la derecha */
+  padding-top: 50px; /* Espacio para que no esté pegado al borde superior */
+}
+
+/* Contenido dentro del menú */
+.menu-content {
+  color: white;
+  text-align: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  position: relative; /* Para posicionar el botón de manera relativa */
+}
+
+/* Cuando el checkbox está marcado, el menú se mueve hacia la izquierda */
+#shopMenuToggle:checked + #shopMenu {
+  right: 0; /* El menú se mueve hacia la izquierda hasta el borde de la pantalla */
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.btn-close:hover {
+  color: black; /* Cambia el color cuando se pasa el ratón */
+}
+
+/* Estilo para el título de la tienda */
+.store-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Estilo para la imagen sobre el botón "Empieza a comprar" */
+.menu-image {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo para el botón "Empieza a comprar" */
+.start-shopping-btn {
+  background-color: gray; /* Color de fondo amarillo */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+.start-shopping-btn:hover {
+  background-color: black;
+}
+
+/*footage
+
+
+/* Estilo del pie de página */
+.footer {
+  background-color: #f5f5dc; /* Fondo beige */
+  padding: 40px 0;
+  color: #333;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Secciones dentro del footer */
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-section h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilo de los enlaces dentro de las secciones */
+ul.social-links, ul.info-links, ul.terms-links, ul.payment-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.social-links li, ul.info-links li, ul.terms-links li, ul.payment-links li {
+  margin-bottom: 5px;
+}
+
+ul.social-links li a, ul.info-links li a, ul.terms-links li a, ul.payment-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul.social-links li a:hover, ul.info-links li a:hover, ul.terms-links li a:hover, ul.payment-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo de la parte inferior del footer */
+.footer-bottom {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Diseño responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-section h5 {
+    text-align: center;
+  }
+}
+/* Estilo de las imágenes de métodos de pago */
+.payment-images {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias filas si es necesario */
+  justify-content: center;
+  gap: 15px; /* Espacio entre las imágenes */
+  margin-top: 10px;
+}
+
+.payment-icon {
+  width: 50px; /* Ancho de las imágenes */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.payment-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Diseño responsive para las imágenes de pago */
+@media (max-width: 768px) {
+  .payment-images {
+    gap: 10px;
+  }
+
+  .payment-icon {
+    width: 40px; /* Tamaño más pequeño en pantallas pequeñas */
+  }
+}
+/* Cuestionario: Fondo y Tipografía */
+.questionnaire-section {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  padding: 40px;
+  text-align: center;
+}
+
+.questionnaire-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #000; /* Borde negro alrededor del formulario */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.questionnaire-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Estilos de las Etiquetas y Campos */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #000; /* Bordes negros */
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #555; /* Bordes más oscuros al enfocar */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Botón de Envío */
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #fff; /* Texto blanco */
+  background-color: #000; /* Fondo negro */
+  border: 2px solid #000; /* Bordes negros */
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  border: 2px solid #000; /* Bordes negros */
+}
